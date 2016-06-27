@@ -2,49 +2,55 @@
 <html>
     <head>
         <title>Jocy's Photography</title>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="icon" type="image/x-icon" href="http://static.tumblr.com/5724b7fa0c2d9b20ee9737891835096b/suime4d/GKKmppbvj/tumblr_static_tumblr_mj0qvzq2y81s7or0ro1_400.png">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+        
+        <script src="//www.builtbyevolve.com/files/nerveSlider/jquery.nerveSlider.min.js"></script>
+        <link rel="stylesheet" href="//www.builtbyevolve.com/files/nerveSlider/nerveSlider.min.css" type="text/css" />
     </head>
     <body>
-                <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/quivf8d.jpg" style="width:100%">
-          </div>
+      <script>
+        $(document).ready(function() {
+          $(".pics").nerveSlider({ 
+            sliderWidth: "1350px",
+            sliderHeight: "600px",
+          });
+          allowKeyboardEvents = "true"; 
+          $(".customPrevArrow").click(function(){ // When the custom previous arrow is pressed...
+        		$(".yourSlider").prevSlide();      // Go to the previous slide.
+        	});
         
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/dBc8blm.jpg" style="width:100%">
-          </div>
+        	$(".customNextArrow").click(function(){ // When the custom next arrow is pressed...
+        		$(".yourSlider").nextSlide();      // Go to the next slide.
+        	});
+        	
+        	$(".customPrevArrow").click(function(){ // When the custom previous arrow is pressed...
+        	
+      		$(".yourSlider").prevSlide();      // Go to the previous slide.
+        	});
+      
+      	  $(".customNextArrow").click(function(){ // When the custom next arrow is pressed...
+      		  $(".yourSlider").nextSlide();      // Go to the next slide.
+      	  });
+        });
+      </script>
+      
+       <div class="whee">
+         
+        <div class="pics"> 
+          <img src="https://i.imgur.com/quivf8d.jpg" data-slideCaption="Fremont, California" alt="">
+          q<img src="https://i.imgur.com/OistS4L.jpg" data-slideCaption="Fremont, California" alt=""> 
+          <img src="https://i.imgur.com/QOz4qB8.jpg" data-slideCaption="Carmel Bay, Monterey, California" alt="">
+          q<img src="https://i.imgur.com/RcGI04K.jpg" data-slideCaption="Mission Peak, Fremont, California" alt="">
+          <img src="https://i.imgur.com/xqtyN28.jpg" data-slideCaption="Newark, California" alt="">
+          q<img src="https://i.imgur.com/eV2pRyw.jpg" data-slideCaption="Big Sur, California" alt="">
+          <img src="https://i.imgur.com/SwmWdDO.jpg" data-slideCaption="Modesto, California" alt="">
+          <img src="https://i.imgur.com/AJld4Ij.jpg" data-slideCaption="Napa, California" alt="">
+          q<img src="https://i.imgur.com/3wqCKuH.jpg" data-slideCaption="Castello de Amorosa, Napa, California" alt="">
+          <img src="https://i.imgur.com/PPP0NRR.jpg" data-slideCaption="San Francisco, California" alt="">
+        </div>
         
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/QOz4qB8.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/O8cX9Fv.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/xqtyN28.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/l5v6L5u.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/SwmWdDO.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/AJld4Ij.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides fade">
-            <img src="https://i.imgur.com/urLLzpC.jpg" style="width:100%">
-          </div>
-          
-           <div class="mySlides fade">
-            <img src="https://i.imgur.com/PPP0NRR.jpg" style="width:100%">
-          </div>
-      </body>
+      </div>
+    </body>
+    
 </html>
